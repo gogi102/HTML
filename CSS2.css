@@ -1,0 +1,38 @@
+*{
+    font-family: "굴림";
+}
+
+.valch{
+
+    color: blue;    
+
+}
+
+[class]{
+    color: red;
+}
+
+a{
+    display: block;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+
+a:visited{
+    background-color: black;
+    color:  gray;
+}
+a:link{
+    font-size: 2rem;
+}
+
+a:hover{
+    background-color: red;
+    color: white;
+}
+
+.ch:first-child{
+    color: greenyellow;
+}
