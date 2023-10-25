@@ -10,12 +10,14 @@
 
 <body>
     <script>
+        var height2;
         var weight;
         var height;//자바스크립트의 자료형은 var로 통일
         weight = prompt("몸무게")
         height = prompt("키")//prompt는 입력받는거 예:파이썬에 input 자바에 Scanner과 같다
+        height2 = height/100;
         var bmi;
-        bmi = weight / (height * height)
+        bmi = weight / (height2 * height2)
         if (bmi < 18.5) {
             document.write("저체중")//document.write는 출력하는거 예:파이썬에 print 자바에 System.out.println과 같다
         }
