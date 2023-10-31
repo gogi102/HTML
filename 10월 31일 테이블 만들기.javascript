@@ -11,7 +11,7 @@
     <script>
         var num = 1;
 
-        document.write("<table>")
+        document.write("<table border = '1'>")
 
         for (var i = 0; i < 5; i++) {
             document.write("<tr>")
