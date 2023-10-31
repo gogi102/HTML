@@ -17,7 +17,7 @@
             document.write("<tr>")
 
             for (var j = 0; j < 5; j++) {
-                document.write("<td>" + (num++) + "</td>")
+                document.write("<td style = 'text-align:center'>" + (num++) + "</td>")
             }
             document.write("</tr>")
         }
