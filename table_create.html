@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>지옥에서 돌아온 테이블</title>
+<style> table,td,th{border: 1px solid black;}
+		table,td,th{background-color:#FFCCFF}
+</style>
+</head>
+<body>
+<form name = "rData" action="#" method = "post">
+	<table style = "border: 1px solid black;">
+		<tr>
+			<th>예약번호</th><td>
+			<input type="text" name = "number"> 예)20210011
+			</td>
+		</tr>
+		<tr>
+			<th>주민번호</th><td>
+			<input type="text" name = "human_number"> 예)790101-1111111
+			</td>
+		</tr>
+		<tr>
+			<th>백신코드</th><td><select>
+								<option value = "selection"> 백신선택
+								<option value = "V001"> A백신
+								<option value = "V002"> B백신
+								<option value = "V003"> C백신
+								</select>예)V001, V002, V003
+							</td>
+		</tr>
+		<tr>
+			<th>병원코드</th><td>
+			
+			<lable><input type="radio" name = "hospital" value = H001>가_병원</lable>
+			<lable><input type="radio" name = "hospital" value = H002>나_병원</lable>
+			<lable><input type="radio" name = "hospital" value = H003>다_병원</lable>
+			<lable><input type="radio" name = "hospital" value = H004>라_병원</lable>
+			
+			
+			예)H001, H002, H003, H004</td>
+		</tr>
+		<tr>
+			<th>병원코드</th>
+			<td>
+			
+			<lable><input type="checkbox" name = "hospital" value = H001>가_병원</lable>
+			<lable><input type="checkbox" name = "hospital" value = H002>나_병원</lable>
+			<lable><input type="checkbox" name = "hospital" value = H003>다_병원</lable>
+			<lable><input type="checkbox" name = "hospital" value = H004>라_병원</lable>
+			
+			예)H001, H002, H003, H004</td>
+		</tr>
+		<tr>
+			<th>예약날짜</th><td>
+			
+			<input type="text" name = "day">예)20210101
+			
+			</td>
+		</tr>
+		<tr>
+			<th>예약시간</th><td>
+			
+			<input type="text" name = "time" maxlength = 4>예)0930, 1130
+			
+			</td>
+		</tr>
+		<tr>
+		<th colspan = "2">
+				<input type="submit" name = "commit" value = "등록">
+				<input type="reset" name = "decline" value = "취소">
+				
+		</th>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
