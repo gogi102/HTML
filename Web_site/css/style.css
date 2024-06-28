@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    height: 70px;
+    line-height: 70px;
+    font-size: 12pt;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    padding: 15px 25px;
+}
+
+a:hover {
+    color: red;
+}
+
+.menu>.sub {
+    margin: auto;
+    display: inline-block;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    float: left;
+    padding-left: 11.5%;
+}
+
+.sub {
+    position: absolute;
+    width: 200px;
+    background-color: grey;
+    display: none;
+    z-index: 1;
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+    padding-left: 190px;
+}
+
+.main {
+    padding-top: 180px;
+    padding-right: 80px;
+    background-color: antiquewhite;
+}
+
+.main>img {
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+.main>.contents {
+    float: right;
+}
+
+.main>.contents>h1 {
+    padding-top: 80px;
+    font-size: 50px;
+}
+
+.main>.contents>p {
+    font-size: 20px;
+    padding-bottom: px;
+}
+
+.main3 {
+    padding: 30px;
+    background-color: rgb(255, 70, 85);
+}
+
+.main3>img {
+    padding-left: 50px;
+}
+
+.main3>.maintext {
+    padding-top: 250px;
+    padding-right: 160px;
+    float: right;
+    color: white;
+}
+
+.main3>.maintext>h1 {
+    font-size: 120px;
+}
+
+.main3>.maintext>p {
+    font-size: 20px;
+}
+
+nav>.coment {
+    font-size: 30px;
+    padding-left: 550px;
+    position: absolute;
+}
+
+nav>.coment>h2 {
+    padding-left: 100px;
+}
