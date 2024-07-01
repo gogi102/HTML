@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+::selection {
+    background-color: rgb(255, 70, 85);
+    color: white;
+}
+
 .header {
     position: fixed;
     width: 100%;
@@ -47,6 +52,7 @@ a:hover {
 }
 
 nav {
+
     background-color: black;
     padding-left: 190px;
 }
@@ -54,12 +60,13 @@ nav {
 .main {
     padding-top: 180px;
     padding-right: 80px;
-    background-color: antiquewhite;
+    background-color: ivory;
 }
 
 .main>img {
     padding-bottom: 50px;
     padding-left: 20px;
+
 }
 
 .main>.contents {
@@ -89,7 +96,7 @@ nav {
     padding-top: 250px;
     padding-right: 160px;
     float: right;
-    color: white;
+    color: black;
 }
 
 .main3>.maintext>h1 {
@@ -108,4 +115,9 @@ nav>.coment {
 
 nav>.coment>h2 {
     padding-left: 100px;
+}
+
+nav>.coment>span {
+    display: inline-block;
+    margin-top: 50px;
 }
