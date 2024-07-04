@@ -5,3 +5,7 @@ $(".menu > li").mouseover(function () {
 $(".menu > li").mouseleave(function () {
     $(this).children(".sub").stop().slideUp();
 });
+
+function change_img() {
+
+}
