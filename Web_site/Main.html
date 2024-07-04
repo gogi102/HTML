@@ -76,13 +76,42 @@
                     라운드당 목숨은 하나이며, 생존하려면 상대보다 더 빠르게 판단해야 합니다.<br>
                     데스매치와 스파이크 돌격, 경쟁전과 일반전에서 적과 싸워 이기세요.</p>
             </div>
-            <img src="imgs\화면 캡처 2024-06-28 114329.png" alt="요원 이미지">
-        </div>
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/yMaPsToDin4?si=SGqDlIMThDSlgzfS"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allow="autoplay" allowfullscreen></iframe>
+            <script>
+                // script.js
+                document.addEventListener('DOMContentLoaded', () => {
+                    const slides = document.querySelector('.slides');
+                    const images = document.querySelectorAll('.slides img');
+
+                    let index = 0;
+                    const totalImages = images.length;
+
+                    function showSlide(idx) {
+                        if (idx >= totalImages) {
+                            index = 0;
+                        } else if (idx < 0) {
+                            index = totalImages - 1;
+                        } else {
+                            index = idx;
+                        }
+                        slides.style.transform = `translateX(${-index * 100}%)`;
+                    }
+                    setInterval(() => {
+                        showSlide(index + 1);
+                    }, 3000);
+                });
+
+            </script>
+
+            <div class="slider" style="overflow: hidden;">
+                <div class="slides">
+                    <img src="imgs\화면 캡처 2024-06-28 114329.png" alt="Image 1">
+                    <img src="imgs\화면 캡처 2024-06-28 120240.png" alt="Image 2">
+                    <img src="imgs\화면 캡처 2024-06-28 120316.png" alt="Image 3">
+                    <img src="imgs\화면 캡처 2024-06-28 120439.png" alt="Image 4">
+                    <img src="imgs\화면 캡처 2024-06-28 120223.png" alt="Image 5">
+
+                </div>
+            </div>
         </div>
         <div class="main3">
             <div class="maintext">
@@ -97,7 +126,6 @@
             </div>
             </p><img src="imgs\d193f27477392f1470e9f52ad0940e68.png " alt="요원 이미지">
         </div>
-
 
     </section>
 
