@@ -31,7 +31,8 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: rgb(255, 70, 85);
+
 }
 
 .menu>.sub {
@@ -57,7 +58,6 @@ a:hover {
 }
 
 nav {
-
     background-color: black;
     padding-left: 190px;
 }
@@ -75,6 +75,7 @@ nav {
 }
 
 .main>.contents {
+    margin-top: 20px;
     float: right;
 }
 
@@ -127,12 +128,10 @@ nav>.coment>span {
     margin-top: 50px;
 }
 
-/* styles.css */
-
 .slider {
     margin-top: 30px;
     margin-bottom: 40px;
-    margin-left: 30px;
+    margin-left: 50px;
     width: 100%;
     max-width: 800px;
     overflow: hidden;
@@ -149,4 +148,43 @@ nav>.coment>span {
 .slides img {
     width: 100%;
     border-radius: 10px;
+}
+
+.main-slider {
+    position: relative;
+    width: 80%;
+    margin-left: 50px;
+    max-width: 2000px;
+    overflow: hidden;
+}
+
+.main-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.main-slides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
 }
