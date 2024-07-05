@@ -54,4 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nextButton.addEventListener('click', () => {
         showSlide(index + 1);
     });
+    setInterval(() => {
+        showSlide(index + 1);
+    }, 9000);
 });

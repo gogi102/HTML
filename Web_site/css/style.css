@@ -27,7 +27,7 @@ body {
 a {
     text-decoration: none;
     color: inherit;
-    padding: 15px 25px;
+    padding: 15px 22px;
 }
 
 a:hover {
@@ -151,9 +151,9 @@ nav>.coment>span {
 }
 
 .main-slider {
-    position: relative;
+    max-height: 750px;
     width: 80%;
-    margin-left: 50px;
+    margin-left: 70px;
     max-width: 2000px;
     overflow: hidden;
 }
@@ -165,12 +165,11 @@ nav>.coment>span {
 
 .main-slides img {
     width: 100%;
-    border-radius: 10px;
 }
 
 button {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
