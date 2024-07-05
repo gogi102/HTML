@@ -187,3 +187,10 @@ button.prev {
 button.next {
     right: 10px;
 }
+
+.button {
+    margin-top: 1730px;
+    border-radius: 0;
+    background-color: ivory;
+    color: black;
+}
