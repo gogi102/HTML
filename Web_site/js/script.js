@@ -29,12 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelector('.main-slides');
-    const images = document.querySelectorAll('.main-slides img');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
+    slides = document.querySelector('.main-slides');
+    images = document.querySelectorAll('.main-slides img');
+    prevButton = document.querySelector('.prev');
+    nextButton = document.querySelector('.next');
     let index = 0;
-    const totalImages = images.length;
+    totalImages = images.length;
 
     function showSlide(idx) {
         if (idx >= totalImages) {
