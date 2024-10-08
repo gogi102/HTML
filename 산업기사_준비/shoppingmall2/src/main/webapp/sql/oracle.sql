@@ -20,6 +20,8 @@ create table money_tbl_02(
 	primary key(custno, salenol)
 )
 
+drop table member_tbl_02;
+
 insert into member_tbl_02 values(100001, '김행복', '010-1111-2222', '서울 동대문구 휘경1동', '20151202', 'A', '01');
 insert into member_tbl_02 values(100002, '이축복', '010-1111-3333', '서울 동대문구 휘경2동', '20151206', 'B', '01');
 insert into member_tbl_02 values(100003, '장믿음', '010-1111-4444', '울릉군 울릉읍 독도1리', '20151001', 'B', '30');
@@ -41,3 +43,11 @@ select *
 from MEMBER_TBL_02;
 
 delete from MEMBER_TBL_02 where custno = 100007;
+
+select mem.custno,custname,
+	   case grade when 'A' then 'VIP' when 'B' then '일반' when 'C' then '직원' end grade, 
+	   sum(price)
+from member_tbl_02 mem, money_tbl_02 mon
+where mem.custno = mon.custno(+)
+group by mem.custno, custname, grade
+order by sum(price) desc;

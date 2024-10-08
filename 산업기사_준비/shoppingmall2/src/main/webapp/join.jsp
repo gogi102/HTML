@@ -65,7 +65,7 @@
 		<form name="data" action="join_p.jsp" method="post" onsubmit="return checkValue()">
 			<table class="table_line">
 				<tr>
-					<th>회원번호</th>
+					<th>회원번호(자동발생)</th>
 					<td><input type="text" name="custno" value = "<%= num %>"readonly></td>
 				</tr>
 				<tr>
@@ -95,10 +95,10 @@
 				<tr class="center">
 					<td colspan="2">
 						<input type="submit" value="등록">
-						<input type="button" value="취소" onclick="location.href=join.jsp">
+						<input type="button" value="취소" onclick="location.href='join.jsp'">
 						<input type="button" value="조회">
-				</td>
-				</tr>
+					</td>
+				</tr>	
 			</table>
 			</form>
 	</section>

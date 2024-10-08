@@ -10,7 +10,7 @@
 	String sql = "insert into member_tbl_02 values(?,?,?,?,?,?,?)";
 	// sql 변수선언 후 쿼리문형태의 문자열 저장, 삽입쿼리문에 입력데이터 자리 7개 준비
 	
-	Connqection conn = DBConnect.getConnection();
+	Connection conn = DBConnect.getConnection();
 	PreparedStatement pstmt = conn.prepareStatement(sql);
 	
 	//----> 화면으로부터 사용자가 입력한 회원정보 데이터 7개를 쿼리문 각 자리에 세팅 <----//
@@ -34,7 +34,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:forward page="index.jsp"></jsp:forward>
+<jsp:forward page="member_list.jsp"></jsp:forward>
 <!-- 데이터입력 수행 완료 후 회원목록을 조회할 수 있는 페이지로 이동 -->
 </body>
 </html>
